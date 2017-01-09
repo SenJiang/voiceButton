@@ -7,21 +7,22 @@
 
 #import "VBBlueToothManager.h"
 
+#define kSeriveUUID @"0000ffa0-0000-1000-8000-00805f9b34fb"
 @implementation VBBlueToothManager
 
 + (CBUUID *) ServiceUUID
 {
-    return [CBUUID UUIDWithString:@"FFF0"];
+    return [CBUUID UUIDWithString:@"FFA0"];//Service UUID
 }
 
 + (CBUUID *) ValueCharacteristicUUID
 {
-    return [CBUUID UUIDWithString:@"FFF1"];
+    return [CBUUID UUIDWithString:@"FFA1 "];
 }
 
 + (CBUUID *) StateCharacteristicUUID
 {
-    return [CBUUID UUIDWithString:@"FFF2"];
+    return [CBUUID UUIDWithString:@"FFA2"];
 }
 
 
@@ -65,6 +66,29 @@
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central
 {
     //TODO: to handle the state updates
+    //当前手机的状态
+    CBCentralManagerState state = central.state;
+    
+    if (state == CBCentralManagerStateUnsupported)
+    {
+        NSLog(@"当前手机不支持蓝牙");
+        
+        return;
+    }
+    else if (state == CBCentralManagerStatePoweredOff)
+    {
+        NSLog(@"当前手机蓝牙没有打开");
+        
+        return;
+    }
+    else if (state == CBCentralManagerStatePoweredOn)
+    {
+        //如果当前手机已经打开蓝牙，开始扫描外部设备
+        /*
+         参数1：扫描指定的外部设置的UUID.如果传nil表示扫描外部所有的设备。
+         */
+        [self.manager scanForPeripheralsWithServices:@[kSeriveUUID] options:nil];
+    }
 }
 
 - (void) centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI
@@ -75,7 +99,9 @@
        [self.BLEArray addObject:peripheral];
         [self.RSSIArray addObject:RSSI];
     }
-    
+    if (self.updateBLEArray) {
+       self.updateBLEArray(self.BLEArray, self.RSSIArray);
+    }
 //    Call(_updateBLEArray, self.BLEArray, self.RSSIArray);
 //    
     
@@ -90,6 +116,9 @@
     self.peripheral = peripheral;
     self.peripheral.delegate = self;
     //连接成功的回调
+    if (self.didConnect) {
+        self.didConnect();
+    }
 //    Call(_didConnect);
     [self.peripheral discoverServices:@[self.class.ServiceUUID]];
 }
@@ -116,7 +145,7 @@
     {
         if ([s.UUID isEqual:self.class.ServiceUUID])
         {
-            NSLog(@"Found F4 service");
+            NSLog(@"Found voiceBtutton service");
             self.f4Service = s;
             
             [self.peripheral discoverCharacteristics:@[self.class.ValueCharacteristicUUID, self.class.StateCharacteristicUUID] forService:self.f4Service];

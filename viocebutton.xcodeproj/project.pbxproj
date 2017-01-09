@@ -26,6 +26,20 @@
 		5D6BE2991E21D71E00A1F2B8 /* UIImage+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BE28D1E21D71E00A1F2B8 /* UIImage+Fit.m */; };
 		5D6BE29A1E21D71E00A1F2B8 /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BE28F1E21D71E00A1F2B8 /* UIView+YYAdd.m */; };
 		5D6BE29B1E21D71E00A1F2B8 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BE2911E21D71E00A1F2B8 /* UIViewExt.m */; };
+		A33196361E21F83E0083B486 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33196341E21F83E0083B486 /* LoginViewController.m */; };
+		A33196371E21F83E0083B486 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33196351E21F83E0083B486 /* LoginViewController.xib */; };
+		A331963D1E21F9550083B486 /* ZZNAlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A331963A1E21F9550083B486 /* ZZNAlterView.m */; };
+		A331963E1E21F9550083B486 /* ZZNUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A331963C1E21F9550083B486 /* ZZNUIManager.m */; };
+		A33196441E220C9C0083B486 /* UIButton+UnderLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A33196431E220C9C0083B486 /* UIButton+UnderLine.m */; };
+		A33196471E2219000083B486 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33196461E2219000083B486 /* RegisterViewController.m */; };
+		A331964B1E222FBF0083B486 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33196491E222FBF0083B486 /* ListViewController.m */; };
+		A331964C1E222FBF0083B486 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A331964A1E222FBF0083B486 /* ListViewController.xib */; };
+		A33196511E223A370083B486 /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A331964F1E223A370083B486 /* ListTableViewCell.m */; };
+		A33196521E223A370083B486 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33196501E223A370083B486 /* ListTableViewCell.xib */; };
+		A33196581E227EC10083B486 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33196561E227EC10083B486 /* ChatViewController.m */; };
+		A33196591E227EC10083B486 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33196571E227EC10083B486 /* ChatViewController.xib */; };
+		A33196621E2280A70083B486 /* ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A33196601E2280A70083B486 /* ChatTableViewCell.m */; };
+		A33196631E2280A70083B486 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33196611E2280A70083B486 /* ChatTableViewCell.xib */; };
 		C5C4D5418982A31F4652F74E /* libPods-viocebutton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FCA7918BD629B355F854462 /* libPods-viocebutton.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +86,29 @@
 		5D6BE29C1E21D8BB00A1F2B8 /* YYKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKitMacro.h; sourceTree = "<group>"; };
 		79093715A63793D6F1C615A2 /* Pods-viocebutton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viocebutton.release.xcconfig"; path = "Pods/Target Support Files/Pods-viocebutton/Pods-viocebutton.release.xcconfig"; sourceTree = "<group>"; };
 		7DE7D66EC674F559983CB750 /* Pods-viocebutton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viocebutton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-viocebutton/Pods-viocebutton.debug.xcconfig"; sourceTree = "<group>"; };
+		A33196331E21F83E0083B486 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A33196341E21F83E0083B486 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A33196351E21F83E0083B486 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A33196391E21F9550083B486 /* ZZNAlterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZNAlterView.h; sourceTree = "<group>"; };
+		A331963A1E21F9550083B486 /* ZZNAlterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZNAlterView.m; sourceTree = "<group>"; };
+		A331963B1E21F9550083B486 /* ZZNUIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZNUIManager.h; sourceTree = "<group>"; };
+		A331963C1E21F9550083B486 /* ZZNUIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZNUIManager.m; sourceTree = "<group>"; };
+		A33196421E220C9C0083B486 /* UIButton+UnderLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+UnderLine.h"; sourceTree = "<group>"; };
+		A33196431E220C9C0083B486 /* UIButton+UnderLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+UnderLine.m"; sourceTree = "<group>"; };
+		A33196451E2219000083B486 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		A33196461E2219000083B486 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		A33196481E222FBF0083B486 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		A33196491E222FBF0083B486 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		A331964A1E222FBF0083B486 /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		A331964E1E223A370083B486 /* ListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
+		A331964F1E223A370083B486 /* ListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
+		A33196501E223A370083B486 /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		A33196551E227EC10083B486 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		A33196561E227EC10083B486 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		A33196571E227EC10083B486 /* ChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		A331965F1E2280A70083B486 /* ChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatTableViewCell.h; sourceTree = "<group>"; };
+		A33196601E2280A70083B486 /* ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatTableViewCell.m; sourceTree = "<group>"; };
+		A33196611E2280A70083B486 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +144,7 @@
 		5D1587001E1F65430098C8A9 /* viocebutton */ = {
 			isa = PBXGroup;
 			children = (
-				5D1587181E1F65C60098C8A9 /* VBClass */,
+				A33196321E21F82B0083B486 /* VBClass */,
 				5D1587191E1F65D70098C8A9 /* VBOther */,
 				5D15871A1E1F65E70098C8A9 /* VBService */,
 				5D1587041E1F65430098C8A9 /* AppDelegate.h */,
@@ -132,16 +169,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5D1587181E1F65C60098C8A9 /* VBClass */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VBClass;
-			sourceTree = "<group>";
-		};
 		5D1587191E1F65D70098C8A9 /* VBOther */ = {
 			isa = PBXGroup;
 			children = (
+				A33196381E21F9550083B486 /* VieoceButtonUI */,
 				5D6BE26D1E21D4F200A1F2B8 /* Category */,
 			);
 			path = VBOther;
@@ -181,6 +212,8 @@
 				5D6BE2791E21D58300A1F2B8 /* UIViewController+UE.h */,
 				5D6BE27A1E21D58300A1F2B8 /* UIViewController+UE.m */,
 				5D6BE29C1E21D8BB00A1F2B8 /* YYKitMacro.h */,
+				A33196421E220C9C0083B486 /* UIButton+UnderLine.h */,
+				A33196431E220C9C0083B486 /* UIButton+UnderLine.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -220,6 +253,65 @@
 				79093715A63793D6F1C615A2 /* Pods-viocebutton.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A33196321E21F82B0083B486 /* VBClass */ = {
+			isa = PBXGroup;
+			children = (
+				A33196541E227E540083B486 /* ViewController */,
+				A33196531E2241410083B486 /* Model */,
+				A331964D1E223A060083B486 /* Cell */,
+			);
+			path = VBClass;
+			sourceTree = "<group>";
+		};
+		A33196381E21F9550083B486 /* VieoceButtonUI */ = {
+			isa = PBXGroup;
+			children = (
+				A33196391E21F9550083B486 /* ZZNAlterView.h */,
+				A331963A1E21F9550083B486 /* ZZNAlterView.m */,
+				A331963B1E21F9550083B486 /* ZZNUIManager.h */,
+				A331963C1E21F9550083B486 /* ZZNUIManager.m */,
+			);
+			path = VieoceButtonUI;
+			sourceTree = "<group>";
+		};
+		A331964D1E223A060083B486 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A331964E1E223A370083B486 /* ListTableViewCell.h */,
+				A331964F1E223A370083B486 /* ListTableViewCell.m */,
+				A33196501E223A370083B486 /* ListTableViewCell.xib */,
+				A331965F1E2280A70083B486 /* ChatTableViewCell.h */,
+				A33196601E2280A70083B486 /* ChatTableViewCell.m */,
+				A33196611E2280A70083B486 /* ChatTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A33196531E2241410083B486 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A33196541E227E540083B486 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A33196451E2219000083B486 /* RegisterViewController.h */,
+				A33196461E2219000083B486 /* RegisterViewController.m */,
+				A33196331E21F83E0083B486 /* LoginViewController.h */,
+				A33196341E21F83E0083B486 /* LoginViewController.m */,
+				A33196351E21F83E0083B486 /* LoginViewController.xib */,
+				A33196481E222FBF0083B486 /* ListViewController.h */,
+				A33196491E222FBF0083B486 /* ListViewController.m */,
+				A331964A1E222FBF0083B486 /* ListViewController.xib */,
+				A33196551E227EC10083B486 /* ChatViewController.h */,
+				A33196561E227EC10083B486 /* ChatViewController.m */,
+				A33196571E227EC10083B486 /* ChatViewController.xib */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +376,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A33196371E21F83E0083B486 /* LoginViewController.xib in Resources */,
+				A33196631E2280A70083B486 /* ChatTableViewCell.xib in Resources */,
+				A33196521E223A370083B486 /* ListTableViewCell.xib in Resources */,
+				A33196591E227EC10083B486 /* ChatViewController.xib in Resources */,
 				5D1587111E1F65430098C8A9 /* LaunchScreen.storyboard in Resources */,
+				A331964C1E222FBF0083B486 /* ListViewController.xib in Resources */,
 				5D15870E1E1F65430098C8A9 /* Assets.xcassets in Resources */,
 				5D15870C1E1F65430098C8A9 /* Main.storyboard in Resources */,
 			);
@@ -345,13 +442,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A331963D1E21F9550083B486 /* ZZNAlterView.m in Sources */,
 				5D6BE2991E21D71E00A1F2B8 /* UIImage+Fit.m in Sources */,
+				A331964B1E222FBF0083B486 /* ListViewController.m in Sources */,
+				A331963E1E21F9550083B486 /* ZZNUIManager.m in Sources */,
 				5D6BE2921E21D71E00A1F2B8 /* CALayer+Ex.m in Sources */,
+				A33196471E2219000083B486 /* RegisterViewController.m in Sources */,
 				5D6BE2761E21D53A00A1F2B8 /* VBBlueToothManager.m in Sources */,
 				5D1587091E1F65430098C8A9 /* ViewController.m in Sources */,
 				5D6BE2971E21D71E00A1F2B8 /* UIColor+Helper.m in Sources */,
 				5D1587061E1F65430098C8A9 /* AppDelegate.m in Sources */,
 				5D6BE2961E21D71E00A1F2B8 /* NSString+YYAdd.m in Sources */,
+				A33196361E21F83E0083B486 /* LoginViewController.m in Sources */,
+				A33196511E223A370083B486 /* ListTableViewCell.m in Sources */,
+				A33196441E220C9C0083B486 /* UIButton+UnderLine.m in Sources */,
+				A33196581E227EC10083B486 /* ChatViewController.m in Sources */,
 				5D6BE29A1E21D71E00A1F2B8 /* UIView+YYAdd.m in Sources */,
 				5D6BE2781E21D53A00A1F2B8 /* VBSocketSDK.m in Sources */,
 				5D1587031E1F65430098C8A9 /* main.m in Sources */,
@@ -359,6 +464,7 @@
 				5D6BE2941E21D71E00A1F2B8 /* NSNumber+YYAdd.m in Sources */,
 				5D6BE2981E21D71E00A1F2B8 /* UIDevice+YYAdd.m in Sources */,
 				5D6BE27B1E21D58300A1F2B8 /* UIViewController+UE.m in Sources */,
+				A33196621E2280A70083B486 /* ChatTableViewCell.m in Sources */,
 				5D6BE2771E21D53A00A1F2B8 /* VBScoketManager.m in Sources */,
 				5D6BE29B1E21D71E00A1F2B8 /* UIViewExt.m in Sources */,
 			);
