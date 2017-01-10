@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 //#import <ChameleonFramework/Chameleon.h>
 #import <MBProgressHUD.h>
+#import "UIColor+Random.h"
 /**
  *  UI统一风格模块
  */

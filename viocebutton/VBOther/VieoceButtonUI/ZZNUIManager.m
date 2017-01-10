@@ -8,9 +8,11 @@
 
 #import "ZZNUIManager.h"
 #import <objc/runtime.h>
-#import "ZZNAlterView.h"
 #import <UIImageView+WebCache.h>
+#import "ZZNAlterView.h"
 #import <MBProgressHUD.h>
+#import "UIImage+WZ.h"
+#import <ReactiveCocoa.h>
 
 CFTimeInterval const ZZNAnimationDuration_0d5 = 0.5;
 CFTimeInterval const ZZNAnimationDuration_2d0 = 2;
@@ -148,6 +150,49 @@ CFTimeInterval const ZZNAnimationDuration_0d25 = 0.25;
 //        error = nil;
 //    }
 }
+- (RACSignal*) showErrorMessageWithTitle:(NSString*)title inView:(UIView*)view{
+    return [[[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+        return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+            if(view){
+                MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+                hud.labelText = title;
+                hud.mode = MBProgressHUDModeCustomView;
+                hud.removeFromSuperViewOnHide = YES;
+                [hud hide:YES afterDelay:1.0];
+            }
+            [subscriber sendCompleted];
+            return nil;
+        }];
+    }] execute:nil];
+}
+- (RACSignal*) showSuccessMessageWithTitle:(NSString*)title {
+    return [[[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+        return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+            UIView *view = [UIApplication sharedApplication].windows[0];
+            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+            hud.labelText = title;
+            hud.mode = MBProgressHUDModeCustomView;
+            hud.removeFromSuperViewOnHide = YES;
+            [hud hide:YES afterDelay:1.0];
+            [subscriber sendCompleted];
+            return nil;
+        }];
+    }] execute:nil];
+}
+- (RACSignal*) showSuccessMessageWithTitle:(NSString*)title inView:(UIView*)view{
+    return [[[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+        return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+            hud.labelText = title;
+            hud.mode = MBProgressHUDModeCustomView;
+            hud.removeFromSuperViewOnHide = YES;
+            [hud hide:YES afterDelay:2.0];
+            [subscriber sendCompleted];
+            return nil;
+        }];
+    }] execute:nil];
+}
+
 
 //弹出提示信息
 - (void)showAlertMsg:(NSString *)msg{

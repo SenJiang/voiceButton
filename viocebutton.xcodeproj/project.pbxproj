@@ -26,6 +26,8 @@
 		5D6BE2991E21D71E00A1F2B8 /* UIImage+Fit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BE28D1E21D71E00A1F2B8 /* UIImage+Fit.m */; };
 		5D6BE29A1E21D71E00A1F2B8 /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BE28F1E21D71E00A1F2B8 /* UIView+YYAdd.m */; };
 		5D6BE29B1E21D71E00A1F2B8 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BE2911E21D71E00A1F2B8 /* UIViewExt.m */; };
+		A30265FF1E25380E00DC4645 /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = A30265FC1E25380E00DC4645 /* UIColor+Random.m */; };
+		A30266001E25380E00DC4645 /* UIImage+WZ.m in Sources */ = {isa = PBXBuildFile; fileRef = A30265FE1E25380E00DC4645 /* UIImage+WZ.m */; };
 		A33196361E21F83E0083B486 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33196341E21F83E0083B486 /* LoginViewController.m */; };
 		A33196371E21F83E0083B486 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33196351E21F83E0083B486 /* LoginViewController.xib */; };
 		A331963D1E21F9550083B486 /* ZZNAlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A331963A1E21F9550083B486 /* ZZNAlterView.m */; };
@@ -86,6 +88,10 @@
 		5D6BE29C1E21D8BB00A1F2B8 /* YYKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKitMacro.h; sourceTree = "<group>"; };
 		79093715A63793D6F1C615A2 /* Pods-viocebutton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viocebutton.release.xcconfig"; path = "Pods/Target Support Files/Pods-viocebutton/Pods-viocebutton.release.xcconfig"; sourceTree = "<group>"; };
 		7DE7D66EC674F559983CB750 /* Pods-viocebutton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viocebutton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-viocebutton/Pods-viocebutton.debug.xcconfig"; sourceTree = "<group>"; };
+		A30265FB1E25380E00DC4645 /* UIColor+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Random.h"; sourceTree = "<group>"; };
+		A30265FC1E25380E00DC4645 /* UIColor+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Random.m"; sourceTree = "<group>"; };
+		A30265FD1E25380E00DC4645 /* UIImage+WZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WZ.h"; sourceTree = "<group>"; };
+		A30265FE1E25380E00DC4645 /* UIImage+WZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WZ.m"; sourceTree = "<group>"; };
 		A33196331E21F83E0083B486 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		A33196341E21F83E0083B486 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		A33196351E21F83E0083B486 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -190,6 +196,10 @@
 		5D6BE26D1E21D4F200A1F2B8 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				A30265FB1E25380E00DC4645 /* UIColor+Random.h */,
+				A30265FC1E25380E00DC4645 /* UIColor+Random.m */,
+				A30265FD1E25380E00DC4645 /* UIImage+WZ.h */,
+				A30265FE1E25380E00DC4645 /* UIImage+WZ.m */,
 				5D6BE27D1E21D71E00A1F2B8 /* CALayer+Ex.h */,
 				5D6BE27E1E21D71E00A1F2B8 /* CALayer+Ex.m */,
 				5D6BE27F1E21D71E00A1F2B8 /* Categary.h */,
@@ -452,10 +462,12 @@
 				5D1587091E1F65430098C8A9 /* ViewController.m in Sources */,
 				5D6BE2971E21D71E00A1F2B8 /* UIColor+Helper.m in Sources */,
 				5D1587061E1F65430098C8A9 /* AppDelegate.m in Sources */,
+				A30266001E25380E00DC4645 /* UIImage+WZ.m in Sources */,
 				5D6BE2961E21D71E00A1F2B8 /* NSString+YYAdd.m in Sources */,
 				A33196361E21F83E0083B486 /* LoginViewController.m in Sources */,
 				A33196511E223A370083B486 /* ListTableViewCell.m in Sources */,
 				A33196441E220C9C0083B486 /* UIButton+UnderLine.m in Sources */,
+				A30265FF1E25380E00DC4645 /* UIColor+Random.m in Sources */,
 				A33196581E227EC10083B486 /* ChatViewController.m in Sources */,
 				5D6BE29A1E21D71E00A1F2B8 /* UIView+YYAdd.m in Sources */,
 				5D6BE2781E21D53A00A1F2B8 /* VBSocketSDK.m in Sources */,
