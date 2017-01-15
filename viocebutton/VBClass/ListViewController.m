@@ -10,7 +10,7 @@
 #import "ListTableViewCell.h"
 #import "ChatViewController.h"
 #import "VBBlueToothManager.h"
-@interface ListViewController ()<UITableViewDelegate,UITableViewDataSource,BTDartboardDelegate>
+@interface ListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *listTableView;
 
@@ -41,12 +41,12 @@
 - (void)initializationWithBluTooth
 {
     self.blueToothManager = [[VBBlueToothManager alloc]init];
-    self.blueToothManager.delegate = self;
-    [self.blueToothManager setup];
-    int ret = [self.blueToothManager findPeripherals];
-    if (!ret) {
-        NSLog(@"发现蓝牙");
-    }
+//    self.blueToothManager.delegate = self;
+//    [self.blueToothManager setup];
+//    int ret = [self.blueToothManager findPeripherals];
+//    if (!ret) {
+//        NSLog(@"发现蓝牙");
+//    }
 }
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
