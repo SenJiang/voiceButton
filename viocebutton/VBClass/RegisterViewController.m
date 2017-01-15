@@ -8,8 +8,8 @@
 
 #import "RegisterViewController.h"
 #import "ZZNUIManager.h"
-#define Width [UIScreen mainScreen].bounds.size.width
-#define Height [UIScreen mainScreen].bounds.size.height
+#define kUIScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define kUIScreenHeight [UIScreen mainScreen].bounds.size.height
 
 @interface RegisterViewController ()
 {
@@ -34,26 +34,31 @@
 #pragma mark -- initNavigation
 -(void)initNavigation
 {
-    self.navigationController.navigationBar.hidden = YES;
     self.view.backgroundColor = [UIColor colorWithRed:242/255.0 green:242/255.0 blue:242/255.0 alpha:1];
     
-
     [self.view setBackgroundColor:VOICEBUTTON_MAIN_COLOR];
     
-    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    backBtn.frame = CGRectMake(0, 5, 44, 44);
+    UIView *topView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kUIScreenWidth , 20)];
+    topView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:topView];
     
-    [backBtn setImage:[UIImage imageNamed:@"Disclosure Indicator"] forState:UIControlStateNormal];
+    UIImageView *navImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"Kaki button - Button BG .jpg"]];
+    navImageView.userInteractionEnabled = YES;
+    navImageView.frame = CGRectMake(0, 20, kUIScreenWidth, 60);
+    [self.view addSubview:navImageView];
     
-    [backBtn addTarget:self action:@selector(backClick:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:backBtn];
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    backButton.frame = CGRectMake(10, 20, 30, 30);
+    [backButton setBackgroundImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+
+    [backButton addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+    [navImageView addSubview:backButton];
     
-//    [self.view addSubview:view];
 }
 
 #pragma mark -- backClick
 
--(void)backClick:(UIButton *)btn{
+-(void)backAction{
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -62,54 +67,43 @@
 
 -(void)initUI{
     
-    UILabel *phoneNumLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 95, 60, 30)];
-    phoneNumLabel.text = @"Email";
-    phoneNumLabel.font = [UIFont systemFontOfSize:13];
+    UIView *backView = [[UIView alloc]initWithFrame:CGRectMake(0, 80, kUIScreenWidth,1)];
+    backView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:backView];
     
-    UILabel *passWordLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 170, 60, 30)];
-    passWordLabel.text = @"password";
-    passWordLabel.font = [UIFont systemFontOfSize:13];
-    
-    UILabel *checkPasswordLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 228, 60, 30)];
-    checkPasswordLabel.text = @"confirm";
-    checkPasswordLabel.font = [UIFont systemFontOfSize:13];
-    
-    [self.view addSubview:phoneNumLabel];
-    [self.view addSubview:passWordLabel];
-    [self.view addSubview:checkPasswordLabel];
-    
-    _phoneNumTf = [[UITextField alloc]initWithFrame:CGRectMake(70, 95, Width-80, 35)];
-    _phoneNumTf.placeholder = @"Please enter your email address";
-    _phoneNumTf.borderStyle = UITextBorderStyleRoundedRect;
+    _phoneNumTf = [[UITextField alloc]initWithFrame:CGRectMake(30, 160, kUIScreenWidth-60, 50)];
+    _phoneNumTf.placeholder = @"Emaill address";
+    _phoneNumTf.borderStyle = UITextBorderStyleNone;
     _phoneNumTf.backgroundColor = [UIColor whiteColor];
-    _phoneNumTf.font = [UIFont systemFontOfSize:11.0];
+    _phoneNumTf.font = [UIFont systemFontOfSize:20.0];
     
     [self.view addSubview:_phoneNumTf];
     
-    _passWordTf = [[UITextField alloc]initWithFrame:CGRectMake(70, 170, Width-80, 35)];
-    _passWordTf.placeholder = @"Please enter a 6-12 bit password";
-    _passWordTf.borderStyle = UITextBorderStyleRoundedRect;
+    _passWordTf = [[UITextField alloc]initWithFrame:CGRectMake(30, 240, kUIScreenWidth-60, 50)];
+    _passWordTf.placeholder = @"Password";
+    _passWordTf.borderStyle = UITextBorderStyleNone;
+    _passWordTf.secureTextEntry = YES;
     _passWordTf.backgroundColor = [UIColor whiteColor];
-    _passWordTf.font = [UIFont systemFontOfSize:11.0];
+    _passWordTf.font = [UIFont systemFontOfSize:20.0];
     
     [self.view addSubview:_passWordTf];
     
-    _checkPassWordTf = [[UITextField alloc]initWithFrame:CGRectMake(70, 225, Width-80, 35)];
-    _checkPassWordTf.placeholder = @"Please enter your password again";
-    _checkPassWordTf.borderStyle = UITextBorderStyleRoundedRect;
+    _checkPassWordTf = [[UITextField alloc]initWithFrame:CGRectMake(30, 330, kUIScreenWidth-60, 50)];
+    _checkPassWordTf.placeholder = @"Confirm Password";
+    _checkPassWordTf.secureTextEntry = YES;
+    _checkPassWordTf.borderStyle = UITextBorderStyleNone;
     _checkPassWordTf.backgroundColor = [UIColor whiteColor];
-    _checkPassWordTf.font = [UIFont systemFontOfSize:11.0];
+    _checkPassWordTf.font = [UIFont systemFontOfSize:20.0];
     
     [self.view addSubview:_checkPassWordTf];
     
     UIButton *registerBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    registerBtn.frame = CGRectMake(50, 340, Width-100, 30);
+    registerBtn.frame = CGRectMake(30, 420, kUIScreenWidth-60, 50);
     [registerBtn setTitle:@"Register" forState:UIControlStateNormal];
     registerBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
-    [registerBtn setTitleColor:ZZN_UI_COLOR_WHITE forState:UIControlStateNormal];
-    registerBtn.layer.cornerRadius = 5.0;
-    registerBtn.layer.borderWidth = 1;
-    registerBtn.layer.borderColor = [UIColor blackColor].CGColor;
+    [registerBtn setTitleColor:ZZN_UI_COLOR_BLACK forState:UIControlStateNormal];
+    registerBtn.layer.borderWidth = 2;
+    registerBtn.layer.borderColor = [UIColor whiteColor].CGColor;
     registerBtn.backgroundColor = VOICEBUTTON_MAIN_COLOR;
     
     [registerBtn setTintColor:[UIColor whiteColor]];

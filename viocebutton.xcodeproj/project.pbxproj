@@ -13,9 +13,6 @@
 		5D15870C1E1F65430098C8A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D15870A1E1F65430098C8A9 /* Main.storyboard */; };
 		5D15870E1E1F65430098C8A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D15870D1E1F65430098C8A9 /* Assets.xcassets */; };
 		5D1587111E1F65430098C8A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D15870F1E1F65430098C8A9 /* LaunchScreen.storyboard */; };
-		5D6BE2761E21D53A00A1F2B8 /* VBBlueToothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BE2701E21D53A00A1F2B8 /* VBBlueToothManager.m */; };
-		5D6BE2771E21D53A00A1F2B8 /* VBScoketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BE2731E21D53A00A1F2B8 /* VBScoketManager.m */; };
-		5D6BE2781E21D53A00A1F2B8 /* VBSocketSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BE2751E21D53A00A1F2B8 /* VBSocketSDK.m */; };
 		5D6BE27B1E21D58300A1F2B8 /* UIViewController+UE.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BE27A1E21D58300A1F2B8 /* UIViewController+UE.m */; };
 		5D6BE2921E21D71E00A1F2B8 /* CALayer+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BE27E1E21D71E00A1F2B8 /* CALayer+Ex.m */; };
 		5D6BE2941E21D71E00A1F2B8 /* NSNumber+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BE2831E21D71E00A1F2B8 /* NSNumber+YYAdd.m */; };
@@ -28,6 +25,37 @@
 		5D6BE29B1E21D71E00A1F2B8 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6BE2911E21D71E00A1F2B8 /* UIViewExt.m */; };
 		A30265FF1E25380E00DC4645 /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = A30265FC1E25380E00DC4645 /* UIColor+Random.m */; };
 		A30266001E25380E00DC4645 /* UIImage+WZ.m in Sources */ = {isa = PBXBuildFile; fileRef = A30265FE1E25380E00DC4645 /* UIImage+WZ.m */; };
+		A302662F1E2B27B100DC4645 /* VBBlueToothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A30266271E2B27B100DC4645 /* VBBlueToothManager.m */; };
+		A30266301E2B27B100DC4645 /* VBScoketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A302662A1E2B27B100DC4645 /* VBScoketManager.m */; };
+		A30266311E2B27B100DC4645 /* VBSocketSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = A302662C1E2B27B100DC4645 /* VBSocketSDK.m */; };
+		A30266321E2B27B100DC4645 /* VBSocketService.m in Sources */ = {isa = PBXBuildFile; fileRef = A302662E1E2B27B100DC4645 /* VBSocketService.m */; };
+		A30266351E2B28F500DC4645 /* VoiceTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A30266341E2B28F500DC4645 /* VoiceTabBarViewController.m */; };
+		A30266391E2B2C3700DC4645 /* ButtonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A30266381E2B2C3700DC4645 /* ButtonsViewController.m */; };
+		A302663C1E2B2C4D00DC4645 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A302663B1E2B2C4D00DC4645 /* SettingsViewController.m */; };
+		A302664E1E2B3E7100DC4645 /* Creat_New_Button_Page.png in Resources */ = {isa = PBXBuildFile; fileRef = A302663E1E2B3E7100DC4645 /* Creat_New_Button_Page.png */; };
+		A302664F1E2B3E7100DC4645 /* Kaki button - Button BG .jpg in Resources */ = {isa = PBXBuildFile; fileRef = A302663F1E2B3E7100DC4645 /* Kaki button - Button BG .jpg */; };
+		A30266501E2B3E7100DC4645 /* menu1-1_u90.png in Resources */ = {isa = PBXBuildFile; fileRef = A30266401E2B3E7100DC4645 /* menu1-1_u90.png */; };
+		A30266511E2B3E7100DC4645 /* menu1-2_u92.png in Resources */ = {isa = PBXBuildFile; fileRef = A30266411E2B3E7100DC4645 /* menu1-2_u92.png */; };
+		A30266521E2B3E7100DC4645 /* newvoicemessage_u49.png in Resources */ = {isa = PBXBuildFile; fileRef = A30266421E2B3E7100DC4645 /* newvoicemessage_u49.png */; };
+		A30266531E2B3E7100DC4645 /* speaker5_u53.png in Resources */ = {isa = PBXBuildFile; fileRef = A30266431E2B3E7100DC4645 /* speaker5_u53.png */; };
+		A30266541E2B3E7100DC4645 /* u141.png in Resources */ = {isa = PBXBuildFile; fileRef = A30266441E2B3E7100DC4645 /* u141.png */; };
+		A30266551E2B3E7100DC4645 /* u143.png in Resources */ = {isa = PBXBuildFile; fileRef = A30266451E2B3E7100DC4645 /* u143.png */; };
+		A30266561E2B3E7100DC4645 /* u145.png in Resources */ = {isa = PBXBuildFile; fileRef = A30266461E2B3E7100DC4645 /* u145.png */; };
+		A30266571E2B3E7100DC4645 /* u159.png in Resources */ = {isa = PBXBuildFile; fileRef = A30266471E2B3E7100DC4645 /* u159.png */; };
+		A30266581E2B3E7100DC4645 /* u161.png in Resources */ = {isa = PBXBuildFile; fileRef = A30266481E2B3E7100DC4645 /* u161.png */; };
+		A30266591E2B3E7100DC4645 /* u35.png in Resources */ = {isa = PBXBuildFile; fileRef = A30266491E2B3E7100DC4645 /* u35.png */; };
+		A302665A1E2B3E7100DC4645 /* u41.png in Resources */ = {isa = PBXBuildFile; fileRef = A302664A1E2B3E7100DC4645 /* u41.png */; };
+		A302665B1E2B3E7100DC4645 /* u68.png in Resources */ = {isa = PBXBuildFile; fileRef = A302664B1E2B3E7100DC4645 /* u68.png */; };
+		A302665C1E2B3E7100DC4645 /* u72.png in Resources */ = {isa = PBXBuildFile; fileRef = A302664C1E2B3E7100DC4645 /* u72.png */; };
+		A302665D1E2B3E7100DC4645 /* voicemessage1_u43.png in Resources */ = {isa = PBXBuildFile; fileRef = A302664D1E2B3E7100DC4645 /* voicemessage1_u43.png */; };
+		A30266611E2B41BF00DC4645 /* ButtonsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A302665F1E2B41BF00DC4645 /* ButtonsTableViewCell.m */; };
+		A30266621E2B41BF00DC4645 /* ButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30266601E2B41BF00DC4645 /* ButtonsTableViewCell.xib */; };
+		A30266641E2B58DE00DC4645 /* User.png in Resources */ = {isa = PBXBuildFile; fileRef = A30266631E2B58DE00DC4645 /* User.png */; };
+		A30266681E2B5D2000DC4645 /* ButtonsAddTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A30266661E2B5D2000DC4645 /* ButtonsAddTableViewCell.m */; };
+		A30266691E2B5D2000DC4645 /* ButtonsAddTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A30266671E2B5D2000DC4645 /* ButtonsAddTableViewCell.xib */; };
+		A302666E1E2B646D00DC4645 /* AddNewGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A302666D1E2B646D00DC4645 /* AddNewGuideViewController.m */; };
+		A30266801E2BB60800DC4645 /* SettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A302667E1E2BB60800DC4645 /* SettingsTableViewCell.m */; };
+		A30266811E2BB60800DC4645 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A302667F1E2BB60800DC4645 /* SettingsTableViewCell.xib */; };
 		A33196361E21F83E0083B486 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A33196341E21F83E0083B486 /* LoginViewController.m */; };
 		A33196371E21F83E0083B486 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A33196351E21F83E0083B486 /* LoginViewController.xib */; };
 		A331963D1E21F9550083B486 /* ZZNAlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = A331963A1E21F9550083B486 /* ZZNAlterView.m */; };
@@ -57,12 +85,6 @@
 		5D15870D1E1F65430098C8A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D1587101E1F65430098C8A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D1587121E1F65430098C8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D6BE26F1E21D53A00A1F2B8 /* VBBlueToothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBBlueToothManager.h; sourceTree = "<group>"; };
-		5D6BE2701E21D53A00A1F2B8 /* VBBlueToothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBBlueToothManager.m; sourceTree = "<group>"; };
-		5D6BE2721E21D53A00A1F2B8 /* VBScoketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBScoketManager.h; sourceTree = "<group>"; };
-		5D6BE2731E21D53A00A1F2B8 /* VBScoketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBScoketManager.m; sourceTree = "<group>"; };
-		5D6BE2741E21D53A00A1F2B8 /* VBSocketSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBSocketSDK.h; sourceTree = "<group>"; };
-		5D6BE2751E21D53A00A1F2B8 /* VBSocketSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBSocketSDK.m; sourceTree = "<group>"; };
 		5D6BE2791E21D58300A1F2B8 /* UIViewController+UE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UE.h"; sourceTree = "<group>"; };
 		5D6BE27A1E21D58300A1F2B8 /* UIViewController+UE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UE.m"; sourceTree = "<group>"; };
 		5D6BE27C1E21D65100A1F2B8 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -92,6 +114,48 @@
 		A30265FC1E25380E00DC4645 /* UIColor+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Random.m"; sourceTree = "<group>"; };
 		A30265FD1E25380E00DC4645 /* UIImage+WZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WZ.h"; sourceTree = "<group>"; };
 		A30265FE1E25380E00DC4645 /* UIImage+WZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WZ.m"; sourceTree = "<group>"; };
+		A30266261E2B27B100DC4645 /* VBBlueToothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBBlueToothManager.h; sourceTree = "<group>"; };
+		A30266271E2B27B100DC4645 /* VBBlueToothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBBlueToothManager.m; sourceTree = "<group>"; };
+		A30266291E2B27B100DC4645 /* VBScoketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBScoketManager.h; sourceTree = "<group>"; };
+		A302662A1E2B27B100DC4645 /* VBScoketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBScoketManager.m; sourceTree = "<group>"; };
+		A302662B1E2B27B100DC4645 /* VBSocketSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBSocketSDK.h; sourceTree = "<group>"; };
+		A302662C1E2B27B100DC4645 /* VBSocketSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBSocketSDK.m; sourceTree = "<group>"; };
+		A302662D1E2B27B100DC4645 /* VBSocketService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VBSocketService.h; sourceTree = "<group>"; };
+		A302662E1E2B27B100DC4645 /* VBSocketService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VBSocketService.m; sourceTree = "<group>"; };
+		A30266331E2B28F500DC4645 /* VoiceTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceTabBarViewController.h; sourceTree = "<group>"; };
+		A30266341E2B28F500DC4645 /* VoiceTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceTabBarViewController.m; sourceTree = "<group>"; };
+		A30266371E2B2C3700DC4645 /* ButtonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonsViewController.h; sourceTree = "<group>"; };
+		A30266381E2B2C3700DC4645 /* ButtonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonsViewController.m; sourceTree = "<group>"; };
+		A302663A1E2B2C4D00DC4645 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		A302663B1E2B2C4D00DC4645 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		A302663E1E2B3E7100DC4645 /* Creat_New_Button_Page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Creat_New_Button_Page.png; sourceTree = "<group>"; };
+		A302663F1E2B3E7100DC4645 /* Kaki button - Button BG .jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kaki button - Button BG .jpg"; sourceTree = "<group>"; };
+		A30266401E2B3E7100DC4645 /* menu1-1_u90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu1-1_u90.png"; sourceTree = "<group>"; };
+		A30266411E2B3E7100DC4645 /* menu1-2_u92.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu1-2_u92.png"; sourceTree = "<group>"; };
+		A30266421E2B3E7100DC4645 /* newvoicemessage_u49.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newvoicemessage_u49.png; sourceTree = "<group>"; };
+		A30266431E2B3E7100DC4645 /* speaker5_u53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speaker5_u53.png; sourceTree = "<group>"; };
+		A30266441E2B3E7100DC4645 /* u141.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u141.png; sourceTree = "<group>"; };
+		A30266451E2B3E7100DC4645 /* u143.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u143.png; sourceTree = "<group>"; };
+		A30266461E2B3E7100DC4645 /* u145.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u145.png; sourceTree = "<group>"; };
+		A30266471E2B3E7100DC4645 /* u159.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u159.png; sourceTree = "<group>"; };
+		A30266481E2B3E7100DC4645 /* u161.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u161.png; sourceTree = "<group>"; };
+		A30266491E2B3E7100DC4645 /* u35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u35.png; sourceTree = "<group>"; };
+		A302664A1E2B3E7100DC4645 /* u41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u41.png; sourceTree = "<group>"; };
+		A302664B1E2B3E7100DC4645 /* u68.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u68.png; sourceTree = "<group>"; };
+		A302664C1E2B3E7100DC4645 /* u72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = u72.png; sourceTree = "<group>"; };
+		A302664D1E2B3E7100DC4645 /* voicemessage1_u43.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voicemessage1_u43.png; sourceTree = "<group>"; };
+		A302665E1E2B41BF00DC4645 /* ButtonsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonsTableViewCell.h; sourceTree = "<group>"; };
+		A302665F1E2B41BF00DC4645 /* ButtonsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonsTableViewCell.m; sourceTree = "<group>"; };
+		A30266601E2B41BF00DC4645 /* ButtonsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonsTableViewCell.xib; sourceTree = "<group>"; };
+		A30266631E2B58DE00DC4645 /* User.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = User.png; sourceTree = "<group>"; };
+		A30266651E2B5D2000DC4645 /* ButtonsAddTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonsAddTableViewCell.h; sourceTree = "<group>"; };
+		A30266661E2B5D2000DC4645 /* ButtonsAddTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonsAddTableViewCell.m; sourceTree = "<group>"; };
+		A30266671E2B5D2000DC4645 /* ButtonsAddTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonsAddTableViewCell.xib; sourceTree = "<group>"; };
+		A302666C1E2B646D00DC4645 /* AddNewGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewGuideViewController.h; sourceTree = "<group>"; };
+		A302666D1E2B646D00DC4645 /* AddNewGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewGuideViewController.m; sourceTree = "<group>"; };
+		A302667D1E2BB60800DC4645 /* SettingsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewCell.h; sourceTree = "<group>"; };
+		A302667E1E2BB60800DC4645 /* SettingsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewCell.m; sourceTree = "<group>"; };
+		A302667F1E2BB60800DC4645 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
 		A33196331E21F83E0083B486 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		A33196341E21F83E0083B486 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		A33196351E21F83E0083B486 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -132,6 +196,7 @@
 		5D1586F51E1F65430098C8A9 = {
 			isa = PBXGroup;
 			children = (
+				A302663D1E2B3E7100DC4645 /* UI icon */,
 				5D1587001E1F65430098C8A9 /* viocebutton */,
 				5D1586FF1E1F65430098C8A9 /* Products */,
 				6DD877D9D0377E99DD4D7A28 /* Pods */,
@@ -152,7 +217,6 @@
 			children = (
 				A33196321E21F82B0083B486 /* VBClass */,
 				5D1587191E1F65D70098C8A9 /* VBOther */,
-				5D15871A1E1F65E70098C8A9 /* VBService */,
 				5D1587041E1F65430098C8A9 /* AppDelegate.h */,
 				5D1587051E1F65430098C8A9 /* AppDelegate.m */,
 				5D1587071E1F65430098C8A9 /* ViewController.h */,
@@ -178,19 +242,11 @@
 		5D1587191E1F65D70098C8A9 /* VBOther */ = {
 			isa = PBXGroup;
 			children = (
+				A30266241E2B27B100DC4645 /* VBService */,
 				A33196381E21F9550083B486 /* VieoceButtonUI */,
 				5D6BE26D1E21D4F200A1F2B8 /* Category */,
 			);
 			path = VBOther;
-			sourceTree = "<group>";
-		};
-		5D15871A1E1F65E70098C8A9 /* VBService */ = {
-			isa = PBXGroup;
-			children = (
-				5D6BE26E1E21D53A00A1F2B8 /* Bluetooth */,
-				5D6BE2711E21D53A00A1F2B8 /* Socket */,
-			);
-			path = VBService;
 			sourceTree = "<group>";
 		};
 		5D6BE26D1E21D4F200A1F2B8 /* Category */ = {
@@ -228,26 +284,6 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		5D6BE26E1E21D53A00A1F2B8 /* Bluetooth */ = {
-			isa = PBXGroup;
-			children = (
-				5D6BE26F1E21D53A00A1F2B8 /* VBBlueToothManager.h */,
-				5D6BE2701E21D53A00A1F2B8 /* VBBlueToothManager.m */,
-			);
-			path = Bluetooth;
-			sourceTree = "<group>";
-		};
-		5D6BE2711E21D53A00A1F2B8 /* Socket */ = {
-			isa = PBXGroup;
-			children = (
-				5D6BE2721E21D53A00A1F2B8 /* VBScoketManager.h */,
-				5D6BE2731E21D53A00A1F2B8 /* VBScoketManager.m */,
-				5D6BE2741E21D53A00A1F2B8 /* VBSocketSDK.h */,
-				5D6BE2751E21D53A00A1F2B8 /* VBSocketSDK.m */,
-			);
-			path = Socket;
-			sourceTree = "<group>";
-		};
 		5F82F3AAA2FDDEF0504DBA6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,9 +301,107 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A30266241E2B27B100DC4645 /* VBService */ = {
+			isa = PBXGroup;
+			children = (
+				A30266251E2B27B100DC4645 /* Bluetooth */,
+				A30266281E2B27B100DC4645 /* Socket */,
+			);
+			path = VBService;
+			sourceTree = "<group>";
+		};
+		A30266251E2B27B100DC4645 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				A30266261E2B27B100DC4645 /* VBBlueToothManager.h */,
+				A30266271E2B27B100DC4645 /* VBBlueToothManager.m */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		A30266281E2B27B100DC4645 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				A30266291E2B27B100DC4645 /* VBScoketManager.h */,
+				A302662A1E2B27B100DC4645 /* VBScoketManager.m */,
+				A302662B1E2B27B100DC4645 /* VBSocketSDK.h */,
+				A302662C1E2B27B100DC4645 /* VBSocketSDK.m */,
+				A302662D1E2B27B100DC4645 /* VBSocketService.h */,
+				A302662E1E2B27B100DC4645 /* VBSocketService.m */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		A30266361E2B291400DC4645 /* TabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A30266331E2B28F500DC4645 /* VoiceTabBarViewController.h */,
+				A30266341E2B28F500DC4645 /* VoiceTabBarViewController.m */,
+			);
+			name = TabBarViewController;
+			sourceTree = "<group>";
+		};
+		A302663D1E2B3E7100DC4645 /* UI icon */ = {
+			isa = PBXGroup;
+			children = (
+				A302663E1E2B3E7100DC4645 /* Creat_New_Button_Page.png */,
+				A302663F1E2B3E7100DC4645 /* Kaki button - Button BG .jpg */,
+				A30266401E2B3E7100DC4645 /* menu1-1_u90.png */,
+				A30266411E2B3E7100DC4645 /* menu1-2_u92.png */,
+				A30266421E2B3E7100DC4645 /* newvoicemessage_u49.png */,
+				A30266431E2B3E7100DC4645 /* speaker5_u53.png */,
+				A30266441E2B3E7100DC4645 /* u141.png */,
+				A30266631E2B58DE00DC4645 /* User.png */,
+				A30266451E2B3E7100DC4645 /* u143.png */,
+				A30266461E2B3E7100DC4645 /* u145.png */,
+				A30266471E2B3E7100DC4645 /* u159.png */,
+				A30266481E2B3E7100DC4645 /* u161.png */,
+				A30266491E2B3E7100DC4645 /* u35.png */,
+				A302664A1E2B3E7100DC4645 /* u41.png */,
+				A302664B1E2B3E7100DC4645 /* u68.png */,
+				A302664C1E2B3E7100DC4645 /* u72.png */,
+				A302664D1E2B3E7100DC4645 /* voicemessage1_u43.png */,
+			);
+			path = "UI icon";
+			sourceTree = "<group>";
+		};
+		A302667A1E2BB23200DC4645 /* message */ = {
+			isa = PBXGroup;
+			children = (
+				A33196551E227EC10083B486 /* ChatViewController.h */,
+				A33196561E227EC10083B486 /* ChatViewController.m */,
+				A33196571E227EC10083B486 /* ChatViewController.xib */,
+				A33196481E222FBF0083B486 /* ListViewController.h */,
+				A33196491E222FBF0083B486 /* ListViewController.m */,
+				A331964A1E222FBF0083B486 /* ListViewController.xib */,
+			);
+			name = message;
+			sourceTree = "<group>";
+		};
+		A302667B1E2BB24D00DC4645 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				A302666C1E2B646D00DC4645 /* AddNewGuideViewController.h */,
+				A302666D1E2B646D00DC4645 /* AddNewGuideViewController.m */,
+				A30266371E2B2C3700DC4645 /* ButtonsViewController.h */,
+				A30266381E2B2C3700DC4645 /* ButtonsViewController.m */,
+			);
+			name = buttons;
+			sourceTree = "<group>";
+		};
+		A302667C1E2BB27600DC4645 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				A302663A1E2B2C4D00DC4645 /* SettingsViewController.h */,
+				A302663B1E2B2C4D00DC4645 /* SettingsViewController.m */,
+			);
+			name = settings;
+			sourceTree = "<group>";
+		};
 		A33196321E21F82B0083B486 /* VBClass */ = {
 			isa = PBXGroup;
 			children = (
+				A30266361E2B291400DC4645 /* TabBarViewController */,
 				A33196541E227E540083B486 /* ViewController */,
 				A33196531E2241410083B486 /* Model */,
 				A331964D1E223A060083B486 /* Cell */,
@@ -295,6 +429,15 @@
 				A331965F1E2280A70083B486 /* ChatTableViewCell.h */,
 				A33196601E2280A70083B486 /* ChatTableViewCell.m */,
 				A33196611E2280A70083B486 /* ChatTableViewCell.xib */,
+				A302665E1E2B41BF00DC4645 /* ButtonsTableViewCell.h */,
+				A302665F1E2B41BF00DC4645 /* ButtonsTableViewCell.m */,
+				A30266601E2B41BF00DC4645 /* ButtonsTableViewCell.xib */,
+				A30266651E2B5D2000DC4645 /* ButtonsAddTableViewCell.h */,
+				A30266661E2B5D2000DC4645 /* ButtonsAddTableViewCell.m */,
+				A30266671E2B5D2000DC4645 /* ButtonsAddTableViewCell.xib */,
+				A302667D1E2BB60800DC4645 /* SettingsTableViewCell.h */,
+				A302667E1E2BB60800DC4645 /* SettingsTableViewCell.m */,
+				A302667F1E2BB60800DC4645 /* SettingsTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -309,17 +452,14 @@
 		A33196541E227E540083B486 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A302667C1E2BB27600DC4645 /* settings */,
+				A302667B1E2BB24D00DC4645 /* buttons */,
+				A302667A1E2BB23200DC4645 /* message */,
 				A33196451E2219000083B486 /* RegisterViewController.h */,
 				A33196461E2219000083B486 /* RegisterViewController.m */,
 				A33196331E21F83E0083B486 /* LoginViewController.h */,
 				A33196341E21F83E0083B486 /* LoginViewController.m */,
 				A33196351E21F83E0083B486 /* LoginViewController.xib */,
-				A33196481E222FBF0083B486 /* ListViewController.h */,
-				A33196491E222FBF0083B486 /* ListViewController.m */,
-				A331964A1E222FBF0083B486 /* ListViewController.xib */,
-				A33196551E227EC10083B486 /* ChatViewController.h */,
-				A33196561E227EC10083B486 /* ChatViewController.m */,
-				A33196571E227EC10083B486 /* ChatViewController.xib */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -386,13 +526,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A302664E1E2B3E7100DC4645 /* Creat_New_Button_Page.png in Resources */,
+				A30266531E2B3E7100DC4645 /* speaker5_u53.png in Resources */,
+				A302664F1E2B3E7100DC4645 /* Kaki button - Button BG .jpg in Resources */,
+				A302665B1E2B3E7100DC4645 /* u68.png in Resources */,
+				A30266591E2B3E7100DC4645 /* u35.png in Resources */,
 				A33196371E21F83E0083B486 /* LoginViewController.xib in Resources */,
 				A33196631E2280A70083B486 /* ChatTableViewCell.xib in Resources */,
+				A302665D1E2B3E7100DC4645 /* voicemessage1_u43.png in Resources */,
+				A30266521E2B3E7100DC4645 /* newvoicemessage_u49.png in Resources */,
+				A30266621E2B41BF00DC4645 /* ButtonsTableViewCell.xib in Resources */,
+				A30266691E2B5D2000DC4645 /* ButtonsAddTableViewCell.xib in Resources */,
+				A30266561E2B3E7100DC4645 /* u145.png in Resources */,
+				A30266641E2B58DE00DC4645 /* User.png in Resources */,
 				A33196521E223A370083B486 /* ListTableViewCell.xib in Resources */,
+				A30266811E2BB60800DC4645 /* SettingsTableViewCell.xib in Resources */,
 				A33196591E227EC10083B486 /* ChatViewController.xib in Resources */,
+				A30266551E2B3E7100DC4645 /* u143.png in Resources */,
+				A302665C1E2B3E7100DC4645 /* u72.png in Resources */,
 				5D1587111E1F65430098C8A9 /* LaunchScreen.storyboard in Resources */,
+				A30266571E2B3E7100DC4645 /* u159.png in Resources */,
+				A30266581E2B3E7100DC4645 /* u161.png in Resources */,
 				A331964C1E222FBF0083B486 /* ListViewController.xib in Resources */,
+				A302665A1E2B3E7100DC4645 /* u41.png in Resources */,
+				A30266501E2B3E7100DC4645 /* menu1-1_u90.png in Resources */,
+				A30266541E2B3E7100DC4645 /* u141.png in Resources */,
 				5D15870E1E1F65430098C8A9 /* Assets.xcassets in Resources */,
+				A30266511E2B3E7100DC4645 /* menu1-2_u92.png in Resources */,
 				5D15870C1E1F65430098C8A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,32 +612,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A30266311E2B27B100DC4645 /* VBSocketSDK.m in Sources */,
 				A331963D1E21F9550083B486 /* ZZNAlterView.m in Sources */,
+				A302662F1E2B27B100DC4645 /* VBBlueToothManager.m in Sources */,
+				A30266611E2B41BF00DC4645 /* ButtonsTableViewCell.m in Sources */,
 				5D6BE2991E21D71E00A1F2B8 /* UIImage+Fit.m in Sources */,
 				A331964B1E222FBF0083B486 /* ListViewController.m in Sources */,
 				A331963E1E21F9550083B486 /* ZZNUIManager.m in Sources */,
 				5D6BE2921E21D71E00A1F2B8 /* CALayer+Ex.m in Sources */,
 				A33196471E2219000083B486 /* RegisterViewController.m in Sources */,
-				5D6BE2761E21D53A00A1F2B8 /* VBBlueToothManager.m in Sources */,
+				A30266801E2BB60800DC4645 /* SettingsTableViewCell.m in Sources */,
 				5D1587091E1F65430098C8A9 /* ViewController.m in Sources */,
 				5D6BE2971E21D71E00A1F2B8 /* UIColor+Helper.m in Sources */,
 				5D1587061E1F65430098C8A9 /* AppDelegate.m in Sources */,
 				A30266001E25380E00DC4645 /* UIImage+WZ.m in Sources */,
+				A30266391E2B2C3700DC4645 /* ButtonsViewController.m in Sources */,
 				5D6BE2961E21D71E00A1F2B8 /* NSString+YYAdd.m in Sources */,
 				A33196361E21F83E0083B486 /* LoginViewController.m in Sources */,
 				A33196511E223A370083B486 /* ListTableViewCell.m in Sources */,
 				A33196441E220C9C0083B486 /* UIButton+UnderLine.m in Sources */,
+				A302666E1E2B646D00DC4645 /* AddNewGuideViewController.m in Sources */,
 				A30265FF1E25380E00DC4645 /* UIColor+Random.m in Sources */,
+				A30266351E2B28F500DC4645 /* VoiceTabBarViewController.m in Sources */,
 				A33196581E227EC10083B486 /* ChatViewController.m in Sources */,
+				A30266681E2B5D2000DC4645 /* ButtonsAddTableViewCell.m in Sources */,
+				A30266321E2B27B100DC4645 /* VBSocketService.m in Sources */,
 				5D6BE29A1E21D71E00A1F2B8 /* UIView+YYAdd.m in Sources */,
-				5D6BE2781E21D53A00A1F2B8 /* VBSocketSDK.m in Sources */,
 				5D1587031E1F65430098C8A9 /* main.m in Sources */,
 				5D6BE2951E21D71E00A1F2B8 /* NSObject+Extension.m in Sources */,
+				A30266301E2B27B100DC4645 /* VBScoketManager.m in Sources */,
+				A302663C1E2B2C4D00DC4645 /* SettingsViewController.m in Sources */,
 				5D6BE2941E21D71E00A1F2B8 /* NSNumber+YYAdd.m in Sources */,
 				5D6BE2981E21D71E00A1F2B8 /* UIDevice+YYAdd.m in Sources */,
 				5D6BE27B1E21D58300A1F2B8 /* UIViewController+UE.m in Sources */,
 				A33196621E2280A70083B486 /* ChatTableViewCell.m in Sources */,
-				5D6BE2771E21D53A00A1F2B8 /* VBScoketManager.m in Sources */,
 				5D6BE29B1E21D71E00A1F2B8 /* UIViewExt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

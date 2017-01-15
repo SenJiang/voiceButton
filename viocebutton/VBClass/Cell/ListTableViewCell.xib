@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="458" height="79"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroudColor" translatesAutoresizingMaskIntoConstraints="NO" id="hOk-Lm-CMe">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="User.png" translatesAutoresizingMaskIntoConstraints="NO" id="hOk-Lm-CMe">
                         <rect key="frame" x="18" y="16" width="45" height="45"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="45" id="KeY-xG-ZSK"/>
@@ -48,7 +48,7 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Disclosure Indicator" translatesAutoresizingMaskIntoConstraints="NO" id="oou-R2-chg">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="oou-R2-chg">
                         <rect key="frame" x="405" y="30" width="20" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="20" id="1GV-Rd-Vz8"/>
@@ -135,7 +135,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Disclosure Indicator" width="22" height="22"/>
-        <image name="backgroudColor" width="172" height="72"/>
+        <image name="User.png" width="45" height="45"/>
+        <image name="arrow" width="23" height="21"/>
     </resources>
 </document>

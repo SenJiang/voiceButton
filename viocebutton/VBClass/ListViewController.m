@@ -10,6 +10,8 @@
 #import "ListTableViewCell.h"
 #import "ChatViewController.h"
 #import "VBBlueToothManager.h"
+#import "ZZNUIManager.h"
+
 @interface ListViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *listTableView;
@@ -61,14 +63,20 @@
 {
     ListTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"listCell"];
     
-    
+     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ChatViewController *chatVC = [[ChatViewController alloc]init];
-    [self presentViewController:chatVC animated:YES completion:nil];
+    if (indexPath.row == 0) {
+        ChatViewController *chatVC = [[ChatViewController alloc]init];
+        
+        [self presentViewController:chatVC animated:YES completion:nil];
+    }else{
+        [self showAlertIndictorWithMessage:kTips withDelay:2];
+    }
+    
 }
 -(NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewRowAction *deleteRoWAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"delete" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
@@ -88,6 +96,8 @@
     Forward.backgroundColor = [UIColor grayColor];
     return @[deleteRoWAction,Forward,Callback];//返回RowAction 的数组
 }
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

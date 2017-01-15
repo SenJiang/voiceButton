@@ -20,29 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMJ-Ng-4Pn">
-                    <rect key="frame" x="0.0" y="623" width="124.5" height="44"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="yT4-i8-zV9"/>
-                    </constraints>
-                    <state key="normal" title="Messages" backgroundImage="backgroudColor"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9t-SY-RhI">
-                    <rect key="frame" x="125.5" y="623" width="124" height="44"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="s8o-Yc-WhF"/>
-                    </constraints>
-                    <state key="normal" title="Buttons" backgroundImage="backgroudColor"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kck-Wj-NKN">
-                    <rect key="frame" x="250.5" y="623" width="124.5" height="44"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="44" id="fPd-QX-2QE"/>
-                    </constraints>
-                    <state key="normal" title="Settings" backgroundImage="backgroudColor"/>
-                </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X3Q-Iy-7FI">
-                    <rect key="frame" x="0.0" y="69" width="375" height="502"/>
+                    <rect key="frame" x="0.0" y="80" width="375" height="491"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
@@ -50,41 +29,27 @@
                         <outlet property="delegate" destination="i5M-Pr-FkT" id="CMy-FF-ThV"/>
                     </connections>
                 </tableView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroudColor" translatesAutoresizingMaskIntoConstraints="NO" id="D1M-JU-3FH">
-                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kaki button - Button BG .jpg" translatesAutoresizingMaskIntoConstraints="NO" id="D1M-JU-3FH">
+                    <rect key="frame" x="0.0" y="20" width="375" height="60"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="1Kw-2j-ZoI"/>
+                        <constraint firstAttribute="height" constant="60" id="1Kw-2j-ZoI"/>
                     </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="X3Q-Iy-7FI" secondAttribute="bottom" constant="96" id="7M9-xY-8qK"/>
-                <constraint firstAttribute="bottom" secondItem="Kck-Wj-NKN" secondAttribute="bottom" id="8v7-t6-lpO"/>
                 <constraint firstItem="X3Q-Iy-7FI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ESI-ue-qjU"/>
-                <constraint firstItem="Kck-Wj-NKN" firstAttribute="width" secondItem="TMJ-Ng-4Pn" secondAttribute="width" id="Ix6-Nk-1tc"/>
-                <constraint firstItem="c9t-SY-RhI" firstAttribute="top" secondItem="X3Q-Iy-7FI" secondAttribute="bottom" constant="52" id="Jt8-TG-8yq"/>
-                <constraint firstItem="TMJ-Ng-4Pn" firstAttribute="top" secondItem="X3Q-Iy-7FI" secondAttribute="bottom" constant="52" id="PSc-20-u8z"/>
                 <constraint firstAttribute="trailing" secondItem="X3Q-Iy-7FI" secondAttribute="trailing" id="QB6-nS-eBh"/>
                 <constraint firstItem="D1M-JU-3FH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="UTi-0A-6PB"/>
                 <constraint firstItem="D1M-JU-3FH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="X8m-ow-DkA"/>
-                <constraint firstAttribute="bottom" secondItem="c9t-SY-RhI" secondAttribute="bottom" id="ZLa-bu-ke4"/>
-                <constraint firstAttribute="bottom" secondItem="TMJ-Ng-4Pn" secondAttribute="bottom" id="bEx-tq-b09"/>
-                <constraint firstItem="c9t-SY-RhI" firstAttribute="width" secondItem="TMJ-Ng-4Pn" secondAttribute="width" id="dGg-QP-2ls"/>
-                <constraint firstItem="TMJ-Ng-4Pn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="df8-5r-AQl"/>
                 <constraint firstAttribute="trailing" secondItem="D1M-JU-3FH" secondAttribute="trailing" id="g1r-wN-QMi"/>
-                <constraint firstItem="X3Q-Iy-7FI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="69" id="juk-71-HbU"/>
-                <constraint firstItem="Kck-Wj-NKN" firstAttribute="leading" secondItem="c9t-SY-RhI" secondAttribute="trailing" constant="1" id="mHb-zx-eTL"/>
-                <constraint firstItem="c9t-SY-RhI" firstAttribute="leading" secondItem="TMJ-Ng-4Pn" secondAttribute="trailing" constant="1" id="nfb-FF-tvD"/>
-                <constraint firstItem="Kck-Wj-NKN" firstAttribute="top" secondItem="X3Q-Iy-7FI" secondAttribute="bottom" constant="52" id="pmA-YA-3Ml"/>
-                <constraint firstAttribute="trailing" secondItem="Kck-Wj-NKN" secondAttribute="trailing" id="wQ1-Ye-7U3"/>
-                <constraint firstItem="Kck-Wj-NKN" firstAttribute="height" secondItem="TMJ-Ng-4Pn" secondAttribute="height" id="wTx-NQ-YW6"/>
-                <constraint firstItem="c9t-SY-RhI" firstAttribute="height" secondItem="TMJ-Ng-4Pn" secondAttribute="height" id="wvW-5r-PAb"/>
+                <constraint firstItem="X3Q-Iy-7FI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="juk-71-HbU"/>
             </constraints>
             <point key="canvasLocation" x="47.5" y="-240.5"/>
         </view>
     </objects>
     <resources>
-        <image name="backgroudColor" width="172" height="72"/>
+        <image name="Kaki button - Button BG .jpg" width="375" height="64"/>
     </resources>
 </document>

@@ -14,6 +14,7 @@
  *  UI统一风格模块
  */
 
+#define kTips @"Under Construction..."
 
 //打印(快捷打印)
 #define ZZNLog(var) LxDBAnyVar(var)

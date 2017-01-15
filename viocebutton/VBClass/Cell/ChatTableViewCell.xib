@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="349" height="90"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="349" height="89.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="349" height="89"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan7 08:58  10sec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIi-zU-PS4">
@@ -29,18 +29,28 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroudColor" translatesAutoresizingMaskIntoConstraints="NO" id="t3l-i3-C75">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voicemessage1_u43.png" translatesAutoresizingMaskIntoConstraints="NO" id="t3l-i3-C75">
                         <rect key="frame" x="28" y="39" width="196" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="196" id="g9g-HI-iOh"/>
                             <constraint firstAttribute="height" constant="40" id="lbF-A9-B72"/>
                         </constraints>
                     </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speaker5_u53.png" translatesAutoresizingMaskIntoConstraints="NO" id="bmb-E2-EvS">
+                        <rect key="frame" x="43" y="44.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="w4b-AO-3X4"/>
+                            <constraint firstAttribute="width" constant="30" id="xPV-CD-Zcn"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                 <constraints>
                     <constraint firstItem="t3l-i3-C75" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="CG2-A1-boe"/>
                     <constraint firstItem="vIi-zU-PS4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Es9-S1-VPq"/>
                     <constraint firstItem="t3l-i3-C75" firstAttribute="top" secondItem="vIi-zU-PS4" secondAttribute="bottom" constant="5" id="Jfe-QD-GU3"/>
+                    <constraint firstItem="bmb-E2-EvS" firstAttribute="centerY" secondItem="t3l-i3-C75" secondAttribute="centerY" id="ZNI-Lf-qmR"/>
+                    <constraint firstItem="t3l-i3-C75" firstAttribute="leading" secondItem="bmb-E2-EvS" secondAttribute="trailing" constant="-45" id="gts-yh-dYq"/>
                     <constraint firstItem="vIi-zU-PS4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="j2H-Oj-YnT"/>
                 </constraints>
             </tableViewCellContentView>
@@ -52,6 +62,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="backgroudColor" width="172" height="72"/>
+        <image name="speaker5_u53.png" width="23" height="20"/>
+        <image name="voicemessage1_u43.png" width="252" height="38"/>
     </resources>
 </document>

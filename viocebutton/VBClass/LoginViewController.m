@@ -11,6 +11,7 @@
 #import "UIButton+UnderLine.h"
 #import "RegisterViewController.h"
 #import "ListViewController.h"
+#import "VoiceTabBarViewController.h"
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *name;
 @property (weak, nonatomic) IBOutlet UITextField *password;
@@ -67,10 +68,9 @@
    
     if ([[NSUserDefaults standardUserDefaults] valueForKey:self.name.text]&&[[NSUserDefaults standardUserDefaults] valueForKey:self.password.text]) {
         NSLog(@"有账号");
-        ListViewController *listVC = [[ListViewController alloc]init];
-        
-        [self presentViewController:listVC animated:YES completion:nil];
-        //    [self.navigationController pushViewController:listVC animated:YES];
+//        ListViewController *listVC = [[ListViewController alloc]init];
+        VoiceTabBarViewController *tabbar = [VoiceTabBarViewController new];
+        [self presentViewController:tabbar animated:YES completion:nil];
     }else{
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:@"Account or password error" preferredStyle:UIAlertControllerStyleAlert];
         

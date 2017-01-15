@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+//消息展示
 @interface ChatViewController : ViewController
 
 @end
