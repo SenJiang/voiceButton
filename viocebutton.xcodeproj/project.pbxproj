@@ -498,8 +498,8 @@
 				TargetAttributes = {
 					5D1586FD1E1F65430098C8A9 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = DDSZZTF2EY;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = YS5EJK97LA;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -767,14 +767,17 @@
 			baseConfigurationReference = 7DE7D66EC674F559983CB750 /* Pods-viocebutton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DDSZZTF2EY;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YS5EJK97LA;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = viocebutton/PrefixHeader.pch;
 				INFOPLIST_FILE = viocebutton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sam.viocebutton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.detu.detucameraEnterPrise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1423efd3-dcd2-4027-96d1-1dd2064339ce";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: com.detu.detucameraEnterPrise";
 			};
 			name = Debug;
 		};
@@ -783,14 +786,17 @@
 			baseConfigurationReference = 79093715A63793D6F1C615A2 /* Pods-viocebutton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DDSZZTF2EY;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YS5EJK97LA;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = viocebutton/PrefixHeader.pch;
 				INFOPLIST_FILE = viocebutton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sam.viocebutton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.detu.detucameraEnterPrise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1423efd3-dcd2-4027-96d1-1dd2064339ce";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: com.detu.detucameraEnterPrise";
 			};
 			name = Release;
 		};

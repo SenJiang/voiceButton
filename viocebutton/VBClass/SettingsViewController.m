@@ -9,6 +9,7 @@
 #import "SettingsViewController.h"
 #import "SettingsTableViewCell.h"
 #import "ZZNUIManager.h"
+#import "AddNewGuideViewController.h"
 #define kUIScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kUIScreenHeight [UIScreen mainScreen].bounds.size.height
 @interface SettingsViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -71,7 +72,14 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self showAlertIndictorWithMessage:kTips withDelay:2];
+    
+    if (indexPath.row == 1) {
+        AddNewGuideViewController *addVC = [AddNewGuideViewController new];
+        [self presentViewController:addVC animated:YES completion:nil];
+    }else{
+        [self showAlertIndictorWithMessage:kTips withDelay:2];
+    }
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

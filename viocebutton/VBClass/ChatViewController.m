@@ -63,7 +63,7 @@
         CGPoint location = [longPressGesture locationInView:self.ChatTableView];
         NSIndexPath * indexPath = [self.ChatTableView indexPathForRowAtPoint:location];
         //可以得到此时你点击的哪一行
-        [self showAlertIndictorWithMessage:@"正在开发中" withDelay:3];
+        [self showAlertIndictorWithMessage:kTips withDelay:2];
         
         NSLog(@"在此添加你想要完成的功能%ld",indexPath.row);
     }
